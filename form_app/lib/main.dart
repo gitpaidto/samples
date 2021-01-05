@@ -10,6 +10,10 @@ import 'src/form_widgets.dart';
 import 'src/http/mock_client.dart';
 import 'src/sign_in_http.dart';
 import 'src/validation.dart';
+import 'src/basdai.dart';
+import 'src/svas.dart';
+import 'src/basfi.dart';
+import 'src/basg.dart';
 
 // Set up a mock HTTP client.
 final http.Client httpClient = MockClient();
@@ -41,6 +45,26 @@ final demos = [
     route: '/validation',
     builder: (context) => FormValidationDemo(),
   ),
+  Demo(
+    name: 'BASDAI',
+    route: '/basdai',
+    builder: (context) => BasdaiDemo(),
+  ),
+  Demo(
+    name: 'SVAS',
+    route: '/svas',
+    builder: (context) => SvasDemo(),
+  ),
+  Demo(
+    name: 'BASFI',
+    route: '/basfi',
+    builder: (context) => BasfiDemo(),
+  ),
+  Demo(
+    name: 'BASG',
+    route: '/basg',
+    builder: (context) => BasgDemo(),
+  )
 ];
 
 class FormApp extends StatelessWidget {
